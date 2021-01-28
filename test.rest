@@ -1,0 +1,75 @@
+POST https://4dmincentral.pdipkreatif.id/api/app-auth
+Content-Type: application/json
+
+{
+    "app_id" : "1553030293008",
+    "api_secret" : "239368d5-7189-46aa-a375-976b5f2f11b1"
+}
+
+###
+POST https://4dmincentral.pdipkreatif.id/api/apps/pdip/member-check
+Content-Type: application/json
+Authorization: "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC80ZG1pbmNlbnRyYWwucGRpcGtyZWF0aWYuaWRcL2FwaVwvYXBwLWF1dGgiLCJpYXQiOjE2MTEzMTk4NjYsImV4cCI6MTYxMjgzMTg2NiwibmJmIjoxNjExMzE5ODY2LCJqdGkiOiJyeTdaY1JVc1VTUkNFclZ0Iiwic3ViIjo5LCJwcnYiOiI4ZmY2MzBhMDBjYTRhM2VhZjZmMjU0ZjVhYmU1YWIxYmVlZDI3MjQ5In0.bBeu5uR07rZQq44k8hQQ25KkqQ6CjTF2GSnDAxAyqoM"
+
+{
+	"id" : "32760510100111730001"
+}
+
+###
+POST https://4dmincentral.pdipkreatif.id/api/apps/banner/data/all
+Content-Type: application/json
+Authorization: "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC80ZG1pbmNlbnRyYWwucGRpcGtyZWF0aWYuaWRcL2FwaVwvYXBwLWF1dGgiLCJpYXQiOjE2MTEzMTk4NjYsImV4cCI6MTYxMjgzMTg2NiwibmJmIjoxNjExMzE5ODY2LCJqdGkiOiJyeTdaY1JVc1VTUkNFclZ0Iiwic3ViIjo5LCJwcnYiOiI4ZmY2MzBhMDBjYTRhM2VhZjZmMjU0ZjVhYmU1YWIxYmVlZDI3MjQ5In0.bBeu5uR07rZQq44k8hQQ25KkqQ6CjTF2GSnDAxAyqoM"
+
+{
+	"where":{"key":"page", "value":"berita"}
+}
+
+###
+POST https://4dmincentral.pdipkreatif.id/api/apps/article/pages
+Content-Type: application/json
+Authorization: "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC80ZG1pbmNlbnRyYWwucGRpcGtyZWF0aWYuaWRcL2FwaVwvYXBwLWF1dGgiLCJpYXQiOjE2MTEzMTk4NjYsImV4cCI6MTYxMjgzMTg2NiwibmJmIjoxNjExMzE5ODY2LCJqdGkiOiJyeTdaY1JVc1VTUkNFclZ0Iiwic3ViIjo5LCJwcnYiOiI4ZmY2MzBhMDBjYTRhM2VhZjZmMjU0ZjVhYmU1YWIxYmVlZDI3MjQ5In0.bBeu5uR07rZQq44k8hQQ25KkqQ6CjTF2GSnDAxAyqoM"
+
+{
+	"filter" : [
+        {"key" : "page", "val":"Home"},
+        {"key" : "section", "val":"Berita Terkini"},
+        {"key" : "category", "val" : "queue"}
+    ]
+}
+
+###
+POST https://4dmincentral.pdipkreatif.id/api/apps/article/pages
+Content-Type: application/json
+Authorization: "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC80ZG1pbmNlbnRyYWwucGRpcGtyZWF0aWYuaWRcL2FwaVwvYXBwLWF1dGgiLCJpYXQiOjE2MTEzMTk4NjYsImV4cCI6MTYxMjgzMTg2NiwibmJmIjoxNjExMzE5ODY2LCJqdGkiOiJyeTdaY1JVc1VTUkNFclZ0Iiwic3ViIjo5LCJwcnYiOiI4ZmY2MzBhMDBjYTRhM2VhZjZmMjU0ZjVhYmU1YWIxYmVlZDI3MjQ5In0.bBeu5uR07rZQq44k8hQQ25KkqQ6CjTF2GSnDAxAyqoM"
+
+{
+	"filter" : [
+        {"key" : "page", "val":"Berita Perjuangan"},
+        {"key" : "section", "val":"Berita Kerakyatan"},
+        {"key" : "category", "val" : "main"}
+    ]
+}
+
+###
+POST https://4dmincentral.pdipkreatif.id/api/apps/pdip/member-update
+Content-Type: application/json
+Authorization: "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC80ZG1pbmNlbnRyYWwucGRpcGtyZWF0aWYuaWRcL2FwaVwvYXBwLWF1dGgiLCJpYXQiOjE2MTEzMTk4NjYsImV4cCI6MTYxMjgzMTg2NiwibmJmIjoxNjExMzE5ODY2LCJqdGkiOiJyeTdaY1JVc1VTUkNFclZ0Iiwic3ViIjo5LCJwcnYiOiI4ZmY2MzBhMDBjYTRhM2VhZjZmMjU0ZjVhYmU1YWIxYmVlZDI3MjQ5In0.bBeu5uR07rZQq44k8hQQ25KkqQ6CjTF2GSnDAxAyqoM"
+
+{
+	"no_kta": "32023120090111930001",
+    "nama_lengkap": "Selastio fadli",
+    "no_tlp": "+6281213655574",
+    "email": "fadliselaz@gmail.com",
+    "alamat": "JL.Pesona Khayangan depok",
+    "deskripsi": "test up",
+    "tgl_lahir": "1973-11-01",
+    "id_propinsi": "1",
+    "id_kota": "12",
+    "gender" : "Pria",
+    "alamat_domisili" : "jakarta utara"
+}
+
+###
+POST https://4dmincentral.pdipkreatif.id/api/location/provinces-data
+Content-Type: application/json
+Authorization: "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC80ZG1pbmNlbnRyYWwucGRpcGtyZWF0aWYuaWRcL2FwaVwvYXBwLWF1dGgiLCJpYXQiOjE2MTEzMTk4NjYsImV4cCI6MTYxMjgzMTg2NiwibmJmIjoxNjExMzE5ODY2LCJqdGkiOiJyeTdaY1JVc1VTUkNFclZ0Iiwic3ViIjo5LCJwcnYiOiI4ZmY2MzBhMDBjYTRhM2VhZjZmMjU0ZjVhYmU1YWIxYmVlZDI3MjQ5In0.bBeu5uR07rZQq44k8hQQ25KkqQ6CjTF2GSnDAxAyqoM"
