@@ -2,14 +2,15 @@ import logo from "./logo.svg";
 import "./App.css";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import LoginPage from "./pages/login/LoginPage";
-import MyNavbar from "./components/MyNavbar";
+import Mynavbar from "./components/Navbar/Mynavbar";
+import Dashboard from "./pages/dashboard/Dashboard";
 
 function App() {
   return (
     <BrowserRouter>
       <div className="container-fluid bg-dark">
         <img
-          src="https://picsum.photos/seed/150/900"
+          src="https://picsum.photos/seed/190/900"
           alt="andi apps"
           style={{
             width: "100vw",
@@ -21,8 +22,14 @@ function App() {
             left: "0",
           }}
         />
-        <MyNavbar />
+       
         <Switch>
+
+          <Route path="/dashboard">
+          <Mynavbar />
+            <Dashboard/>
+          </Route>
+          
           <Route path="/">
             <LoginPage />
           </Route>
