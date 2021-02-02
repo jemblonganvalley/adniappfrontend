@@ -1,65 +1,59 @@
 import React from "react";
-import './Mynavbar.css'
-import {Link} from 'react-router-dom'
+import "./Mynavbar.css";
+import { Link } from "react-router-dom";
 
 const Mynavbar = () => {
   return (
     <>
-    <nav className="Navbar">
+      <nav className="Navbar">
         <div className="container-navbar">
-          <h1 className="brand">Andi
-          
-          <span style={{color:"orange"}}>Apps</span></h1>
+          <h1 className="brand">
+            Andi
+            <span style={{ color: "orange" }}>Apps</span>
+          </h1>
 
-         {/* link menu */}
+          {/* link menu */}
           <ul className="menu">
             <li className="menu-components">
               <Link to="/dashboard" className="sub-menu">
-                  <span class="material-icons">home</span>
-                  Dashboard
-
+                <span className="material-icons">home</span>
+                Dashboard
               </Link>
-            
             </li>
 
             <li className="menu-components">
               <Link to="/brand-events" className="sub-menu">
-                <span class="material-icons">insert_invitation</span>
-                brand events
+                <span className="material-icons">insert_invitation</span>
+                Brand Events
               </Link>
             </li>
 
             <li className="menu-components">
-              <Link to="/brand" className="sub-menu">
-                <span class="material-icons">local_mall</span>
-                brand
+              <Link to="/brands" className="sub-menu">
+                <span className="material-icons">local_mall</span>
+                Brands
               </Link>
             </li>
-            
+
             <li className="menu-components">
               <Link to="/fixtures" className="sub-menu">
-                <span class="material-icons">storefront</span>
-                fixtures
+                <span className="material-icons">storefront</span>
+                Fixtures
               </Link>
             </li>
-            
+
             <li className="menu-components">
               <Link to="/statistic" className="sub-menu">
-                <span class="material-icons">trending_up</span>
-                statistic
+                <span className="material-icons">trending_up</span>
+                Statistic
               </Link>
             </li>
-          
           </ul>
-        {/* link menu */}
+          {/* link menu */}
 
-        <button className="logout">logout</button>
+          <button className="logout">logout</button>
         </div>
-
-     
-
-    </nav>
-
+      </nav>
     </>
   );
 };
